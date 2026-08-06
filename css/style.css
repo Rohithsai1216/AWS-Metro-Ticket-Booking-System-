@@ -1,0 +1,252 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+/* Navigation */
+
+nav{
+    background:#0056b3;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 60px;
+    color:white;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd700;
+}
+
+/* Hero */
+
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("../images/metro-train.jpg");
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.btn{
+    padding:15px 30px;
+    background:#007bff;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    transition:.3s;
+    font-size:18px;
+}
+
+.btn:hover{
+    background:#003d80;
+}
+
+/* About */
+
+.about{
+    width:90%;
+    margin:auto;
+    padding:70px 0;
+}
+
+.about h2{
+    text-align:center;
+    color:#0056b3;
+    margin-bottom:30px;
+}
+
+.about p{
+    font-size:18px;
+    line-height:1.8;
+    text-align:justify;
+}
+
+/* Features */
+
+.features{
+    width:90%;
+    margin:auto;
+    padding-bottom:70px;
+}
+
+.features h2{
+    text-align:center;
+    color:#0056b3;
+    margin-bottom:40px;
+}
+
+.feature-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    text-align:center;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#0056b3;
+    margin-bottom:15px;
+}
+
+/* Footer */
+
+footer{
+    background:#0056b3;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Booking Page */
+
+.container{
+    width:500px;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.container h2{
+    text-align:center;
+    color:#0056b3;
+    margin-bottom:25px;
+}
+
+input,
+select{
+    width:100%;
+    padding:12px;
+    margin:12px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    background:#007bff;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    margin-top:15px;
+    border-radius:5px;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+#fare{
+    margin-top:20px;
+    font-size:22px;
+    color:green;
+    text-align:center;
+}
+
+/* Ticket */
+
+.ticket{
+    width:600px;
+    margin:50px auto;
+    background:white;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.ticket h2{
+    text-align:center;
+    color:#0056b3;
+    margin-bottom:25px;
+}
+
+.ticket p{
+    margin:12px 0;
+    font-size:18px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+}
+
+.hero-content h1{
+    font-size:35px;
+}
+
+.container{
+    width:95%;
+}
+
+.ticket{
+    width:95%;
+}
+
+}

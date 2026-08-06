@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Metro Ticket</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="logo">
+            🚇 Metro Booking
+        </div>
+
+        <ul>
+
+            <li><a href="dashboard.html">Dashboard</a></li>
+
+            <li><a href="booking.html">Book Ticket</a></li>
+
+            <li><a href="mytickets.html">My Tickets</a></li>
+
+            <li><a href="#" onclick="logout()">Logout</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Ticket -->
+
+    <div class="ticket">
+
+        <h2>🎫 Metro Ticket</h2>
+
+        <hr><br>
+
+        <p><strong>Ticket ID :</strong> <span id="ticketId"></span></p>
+
+        <p><strong>Passenger Name :</strong> <span id="name"></span></p>
+
+        <p><strong>Mobile Number :</strong> <span id="mobile"></span></p>
+
+        <p><strong>Source Station :</strong> <span id="source"></span></p>
+
+        <p><strong>Destination Station :</strong> <span id="destination"></span></p>
+
+        <p><strong>Travel Date :</strong> <span id="travelDate"></span></p>
+
+        <p><strong>Fare :</strong> ₹ <span id="fare"></span></p>
+
+        <p><strong>Booking Time :</strong> <span id="bookingTime"></span></p>
+
+        <p>
+
+            <strong>Status :</strong>
+
+            <span id="status" style="color:green;font-weight:bold;"></span>
+
+        </p>
+
+        <br>
+
+        <button onclick="window.print()">
+
+            🖨 Print Ticket
+
+        </button>
+
+        <br><br>
+
+        <button onclick="window.location.href='booking.html'">
+
+            🚇 Book Another Ticket
+
+        </button>
+
+        <br><br>
+
+        <button onclick="window.location.href='mytickets.html'">
+
+            📜 My Tickets
+
+        </button>
+
+        <br><br>
+
+        <button onclick="window.location.href='dashboard.html'">
+
+            🏠 Dashboard
+
+        </button>
+
+    </div>
+    <script src="js/config.js"></script>
+    <script src="js/ticket/ticket.js"></script>
+    
+
+</body>
+
+</html>

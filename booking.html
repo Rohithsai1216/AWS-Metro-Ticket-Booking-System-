@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Book Metro Ticket</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+🚇 Metro Booking
+</div>
+
+<ul>
+
+<li><a href="dashboard.html">Dashboard</a></li>
+
+<li><a href="mytickets.html">My Tickets</a></li>
+
+<li><a href="#" onclick="logout()">Logout</a></li>
+
+</ul>
+
+</nav>
+
+<div class="container">
+
+<h2>Book Metro Ticket</h2>
+
+<h3 id="welcomeUser"></h3>
+
+<br>
+
+<select id="source">
+
+<option value="">Select Source Station</option>
+<option value="Miyapur">Miyapur</option>
+<option value="JNTU College">JNTU College</option>
+<option value="KPHB Colony">KPHB Colony</option>
+<option value="Kukatpally">Kukatpally</option>
+<option value="Balanagar">Balanagar</option>
+<option value="Moosapet">Moosapet</option>
+<option value="Bharat Nagar">Bharat Nagar</option>
+<option value="Erragadda">Erragadda</option>
+<option value="ESI Hospital">ESI Hospital</option>
+<option value="SR Nagar">SR Nagar</option>
+<option value="Ameerpet">Ameerpet</option>
+<option value="Punjagutta">Punjagutta</option>
+<option value="Irrum Manzil">Irrum Manzil</option>
+<option value="Khairatabad">Khairatabad</option>
+<option value="Lakdikapul">Lakdikapul</option>
+<option value="Assembly">Assembly</option>
+<option value="Nampally">Nampally</option>
+<option value="Gandhi Bhavan">Gandhi Bhavan</option>
+<option value="Osmania Medical College">Osmania Medical College</option>
+<option value="MG Bus Station">MG Bus Station</option>
+<option value="Malakpet">Malakpet</option>
+<option value="New Market">New Market</option>
+<option value="Musarambagh">Musarambagh</option>
+<option value="Dilsukhnagar">Dilsukhnagar</option>
+<option value="Chaitanyapuri">Chaitanyapuri</option>
+<option value="Victoria Memorial">Victoria Memorial</option>
+<option value="LB Nagar">LB Nagar</option>
+
+</select>
+
+<select id="destination">
+
+<option value="">Select Destination Station</option>
+
+<option value="">Select Station</option>
+<option value="Miyapur">Miyapur</option>
+<option value="JNTU College">JNTU College</option>
+<option value="KPHB Colony">KPHB Colony</option>
+<option value="Kukatpally">Kukatpally</option>
+<option value="Balanagar">Balanagar</option>
+<option value="Moosapet">Moosapet</option>
+<option value="Bharat Nagar">Bharat Nagar</option>
+<option value="Erragadda">Erragadda</option>
+<option value="ESI Hospital">ESI Hospital</option>
+<option value="SR Nagar">SR Nagar</option>
+<option value="Ameerpet">Ameerpet</option>
+<option value="Punjagutta">Punjagutta</option>
+<option value="Irrum Manzil">Irrum Manzil</option>
+<option value="Khairatabad">Khairatabad</option>
+<option value="Lakdikapul">Lakdikapul</option>
+<option value="Assembly">Assembly</option>
+<option value="Nampally">Nampally</option>
+<option value="Gandhi Bhavan">Gandhi Bhavan</option>
+<option value="Osmania Medical College">Osmania Medical College</option>
+<option value="MG Bus Station">MG Bus Station</option>
+<option value="Malakpet">Malakpet</option>
+<option value="New Market">New Market</option>
+<option value="Musarambagh">Musarambagh</option>
+<option value="Dilsukhnagar">Dilsukhnagar</option>
+<option value="Chaitanyapuri">Chaitanyapuri</option>
+<option value="Victoria Memorial">Victoria Memorial</option>
+<option value="LB Nagar">LB Nagar</option>
+
+</select>
+
+<input
+type="date"
+id="travelDate">
+
+
+<button onclick="bookTicket()">
+
+Book Ticket
+
+</button>
+
+</div>
+<script src="js/config.js"></script>
+<script src="js/ticket/booking.js"></script>
+
+
+
+</body>
+
+</html>

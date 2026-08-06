@@ -1,0 +1,1 @@
+const API_BASE_URL = "https://brtbl6k014.execute-api.eu-north-1.amazonaws.com/prod";
