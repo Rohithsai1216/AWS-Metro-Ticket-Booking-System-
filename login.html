@@ -43,7 +43,19 @@
 type="password"
 id="password"
 placeholder="Password">
+<div style="margin-top:10px;">
+    <input
+        type="checkbox"
+        id="showPassword"
+        onclick="togglePassword()"
+        style="width:auto; margin-right:8px;">
 
+    <label
+        for="showPassword"
+        style="display:inline;">
+        Show Password
+    </label>
+</div>
 <button onclick="loginCustomer()">
 
 Login
