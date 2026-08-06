@@ -1,3 +1,20 @@
+function toggleRegisterPassword() {
+
+    const password =
+    document.getElementById("password");
+
+    const confirm =
+    document.getElementById("confirmPassword");
+
+    const type =
+    password.type === "password"
+        ? "text"
+        : "password";
+
+    password.type = type;
+    confirm.type = type;
+
+}
 async function registerCustomer() {
 
     const name = document.getElementById("name").value.trim();
