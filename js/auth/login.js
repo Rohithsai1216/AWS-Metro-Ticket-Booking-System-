@@ -1,3 +1,20 @@
+function togglePassword() {
+
+    const password =
+    document.getElementById("password");
+
+    if(password.type === "password"){
+
+        password.type = "text";
+
+    }
+    else{
+
+        password.type = "password";
+
+    }
+
+}
 async function loginCustomer() {
 
     const email = document.getElementById("email").value.trim();
